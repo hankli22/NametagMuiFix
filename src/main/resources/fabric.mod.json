@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "nametag_mui_fix",
+  "version": "${version}",
+  "name": "NametagMuiFix",
+  "description": "Compatibility fix for Meteor Client nametag anchoring when Modern UI replaces Window.calculateScale(). Restores the vanilla windowScale value used by Meteor's 2D projection.",
+  "authors": ["hankli22"],
+  "license": "MIT",
+  "icon": "assets/nametag_mui_fix/icon.png",
+  "environment": "client",
+  "mixins": ["nametag-mui-fix.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "1.21.11",
+    "meteor-client": "1.21.11-86"
+  }
+}
